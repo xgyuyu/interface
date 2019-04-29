@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>登录</title>
+    <meta name="description" content="登录">
+    <meta name="author" content="登录">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body style="background:#FFF;">
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
+    <div class="login-left"></div>
+    <div class="login-right">
+
+        <div class="s-login-top-pic"><span><img src="images/s-login-top-pic.jpg"></span>
+            <h2>
+                <p>教学诊断与改进平台</p>
+            </h2>
+        </div>
+        <dl>
+            <dd class="s-ico-a"><span></span><input id="name" autocomplete="off" placeholder="请输入用户名或邮箱" class="" type="text" /></dd>
+            <dd class="passworder"><span></span><input id="password" name="password" type="password" id="password" /></dd>
+            <dd id="Error" class="tshi" style="display:none;">用户名或密码错误！</dd>
+            <dd class="sender"><button id="submit">登 录</button></dd>
+            <dd class="tshi"><a href="#">忘记密码 ?</a></dd>
+        </dl>
+        <ul>
+            <li>
+                <p>技术支持：南京格堡森科技有限公司</p>
+            </li>
+            <li>
+                <p>服务热线：13805155357 </p>
+            </li>
+            <li>
+                <div>Copyright © 2019</div>
+            </li>
+        </ul>
+
+
+    </div>
+    <script>
+        $(function() {
+            $('#submit').click(function() {
+                var obj = {
+                    username: $('#name').val(),
+                    password: $('#password').val()
+                }
+                $.ajax({
+                    url: '/api/login',
+                    data: obj,
+                    dataType: "json",
+                    type: "POST",
+                }).then(function(res) {
+                    if (res.code === 1) {
+                        window.location.href = '/'
+                    } else {
+                        $('#Error').show()
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

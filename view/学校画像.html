@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学校画像</title>
+    <link href="css/css.css" rel="stylesheet">
+    <link href="assets/css/tabs/tabs-basic.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="schhux">
+        <div class="schhux-con">
+            <div class="pertx"><span><img src="images/ne-tx.jpg"></span>
+                <p>张里里</p><a href="#">安全退出</a>
+            </div>
+            <div class="logo">
+                <h2>教学大数据平台</h2>
+                <ul>
+                    <li><a href="#" class="hover">基础概况</a></li>
+                    <li><a href="#">教学画像</a></li>
+                    <li><a href="#">共性差异</a></li>
+                    <li><a href="#">特征规律</a></li>
+                    <li><a href="#">异常预警</a></li>
+                    <li><a href="#">系统管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+
+    <div class="sch-bao">
+
+        <div class="sch-con-top">
+            <ul>
+                <li><a href="#" class="sch-aa hover"><span><img src="images/logo.png"></span>
+                        <p>学校画像</p>
+                    </a></li>
+                <li><a href="#" class="sch-bb"><span><img src="images/logo.png"></span>
+                        <p>专业画像</p>
+                    </a></li>
+                <li><a href="#" class="sch-cc"><span><img src="images/logo.png"></span>
+                        <p>课程画像</p>
+                    </a></li>
+                <li><a href="#" class="sch-dd"><span><img src="images/logo.png"></span>
+                        <p>教师画像</p>
+                    </a></li>
+                <li><a href="#" class="sch-ee"><span><img src="images/logo.png"></span>
+                        <p>学生画像</p>
+                    </a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="sch-tit"><a href="#">全部指标</a>
+            <h2>学校画像</h2>
+        </div>
+
+        <div class="sch-soso">
+            <!--学校画像-->
+            <div class="tab-bao tab-content-active">
+                <div class="left-time">
+                    <h3>信息更新时间：2019-01-22 17:35:20</h3>
+                    <div class="shijian">2011</div>
+                    <p><span></span>年度无变化指标<i>108</i>项目<a href="#">查看更多</a></p>
+                </div>
+                <ul class="one-con">
+                    <li>
+                        <h4>教学指标</h4>
+                        <dl>
+                            <dd>
+                                <div class="one-dd-up"><span>上升</span><i>项</i></div>
+                                <p><a href="#">58</a></p>
+                            </dd>
+                            <dd>
+                                <div class="one-dd-do"><span>下降</span><i>项</i></div>
+                                <p><a href="#">106</a></p>
+                            </dd>
+                        </dl>
+                        <h5>*与上年度同期相比</h5>
+                    </li>
+                    <li>
+                        <h4>历史最高(低)</h4>
+                        <dl>
+                            <dd>
+                                <div class="one-dd-up"><span>最高</span><i>项</i></div>
+                                <p><a href="#">109</a></p>
+                            </dd>
+                            <dd>
+                                <div class="one-dd-do"><span>最低</span><i>项</i></div>
+                                <p><a href="#">56</a></p>
+                            </dd>
+                        </dl>
+                        <h5>*与历史所有年度相比</h5>
+                    </li>
+                    <li>
+                        <h4>年度快速变化指标</h4>
+                        <dl>
+                            <dd>
+                                <div class="one-dd-up"><span>速升</span><i>项</i></div>
+                                <p><a href="#">--</a></p>
+                            </dd>
+                            <dd>
+                                <div class="one-dd-do"><span>速降</span><i>项</i></div>
+                                <p><a href="#">26</a></p>
+                            </dd>
+                        </dl>
+                        <h5>*与历史变化均速相比</h5>
+                    </li>
+                    <li>
+                        <h4>年度不合格指标</h4>
+                        <dl>
+                            <dd>
+                                <div class="one-dd-up"><span>部标</span><i>项</i></div>
+                                <p><a href="#">--</a></p>
+                            </dd>
+                            <dd>
+                                <div class="one-dd-do"><span>校标</span><i>项</i></div>
+                                <p><a href="#">88</a></p>
+                            </dd>
+                        </dl>
+                        <h5>*与现行标准相比</h5>
+                    </li>
+                    <li>
+                        <h4>年度变化情况</h4>
+                        <dl>
+                            <dd>
+                                <div class="one-dd-up"><span>改善</span><i>项</i></div>
+                                <p><a href="#">--</a></p>
+                            </dd>
+                            <dd>
+                                <div class="one-dd-do"><span>恶化</span><i>项</i></div>
+                                <p><a href="#">--</a></p>
+                            </dd>
+                        </dl>
+                        <h5>*与历史变化均速相比</h5>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="sch-shuju">
+
+
+            <script type="text/javascript">
+                window.onload = function () {
+                    var unfoldField = document.querySelector(".unfold-field");
+                    var wrapH = document.querySelector("#container").offsetHeight;
+                    var wrap = document.querySelector("#container");
+                    var contentH = document.querySelector(".content").offsetHeight;
+                    // 如果实际高度大于我们设置的默认高度就把超出的部分隐藏。
+                    if (contentH > wrapH) {
+                        unfoldField.style.display = "block";
+                    }
+                    wrap.style.visibility = "visible";
+                    unfoldField.onclick = function () {
+                        this.parentNode.removeChild(this);
+                        wrap.style.maxHeight = "100%";
+                        wrap.style.visible = "visible";
+                    };
+                };
+            </script>
+
+            <div class="detail-wrapper">
+                <div class="activity-content" id="container">
+                    <div class="content">
+
+                        <div class="time-xuan">
+                            <ul>
+                                <li><a href="#"><i>2008</i><span>--</span></a></li>
+                                <li><a href="#"><i>2009</i><span>--</span></a></li>
+                                <li><a href="#"><i>2010</i><span>--</span></a></li>
+                                <li><a href="#" class="hover"><i>2011</i><span>快速增长年</span></a></li>
+                                <li><a href="#"><i>2012</i><span>--</span></a></li>
+                                <li><a href="#"><i>2013</i><span>--</span></a></li>
+                                <li><a href="#"><i>2014</i><span>--</span></a></li>
+                                <li><a href="#"><i>2015</i><span>--</span></a></li>
+                                <li><a href="#"><i>2016</i><span>--</span></a></li>
+                                <li><a href="#"><i>2017</i><span>--</span></a></li>
+                                <li><a href="#"><i>2018</i><span>--</span></a></li>
+                                <li><a href="#"><i>2019</i><span>--</span></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="det-sch-con">
+
+
+
+                            <div class="det-sch-list">
+                                <h3><i></i>基本信息</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>院校领导</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>基本办学条件</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>实践教学条件</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="det-sch-list">
+                                <h3><i></i>办学经费</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>师资队伍</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="det-sch-list">
+                                <h3><i></i>专业</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>教学管理与教学研究</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="det-sch-list">
+                                <h3><i></i>社会评价</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="det-sch-list">
+                                <h3><i></i>学生信息（扩展）</h3>
+                                <ul class="cai-list">
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>上升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>下降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>最高</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>最低</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>速升</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>速降</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>部标</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>校标</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dd class="cai-top"><i>28</i><span>项</span>
+                                                <p>改善</p>
+                                            </dd>
+                                            <dd class="cai-bot"><i>28</i><span>项</span>
+                                                <p>恶化</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="unfold-field">
+                        <div class="unfold-field_text"><a href="javascript:void (0);" class="see-more">展开更多详情</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="clear"></div>
+    </div>
+
+
+    <div class="sch-table">
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+            class="table table-hover table-bordered table-list">
+            <thead class="listtrleft">
+                <tr>
+                    <th scope="col">指标项</th>
+                    <th scope="col">基本信息</th>
+                    <th scope="col">院校领导</th>
+                    <th scope="col">基本办学条件</th>
+                    <th scope="col">实践教学条件</th>
+                    <th scope="col">办学经费</th>
+                    <th scope="col">师资队伍</th>
+                    <th scope="col">专业</th>
+                    <th scope="col">教学管理与教学研究</th>
+                    <th scope="col">社会评价</th>
+                    <th scope="col">学生信息（扩展）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="listbiaoti">
+                        <p>历史反复升降的指标</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>9</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>2</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>17</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>15</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>3</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listbiaoti">
+                        <p>历史累计增长较大的指标</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>9</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>2</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>17</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>15</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>3</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listbiaoti">
+                        <p>历史累计增长较小的指标</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>9</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>2</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>17</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>15</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>3</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listbiaoti">
+                        <p>历史持续增长的指标</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>9</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>2</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>17</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>15</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>3</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="listbiaoti">
+                        <p>历史持续下降的指标</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>9</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>2</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>17</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>15</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>0</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>3</p>
+                    </td>
+                    <td class="listbiaoti">
+                        <p>4</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+</body>
+
+</html>
