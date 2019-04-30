@@ -479,12 +479,18 @@
         <div class="clear"></div>
     </div>
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/common.js"></script>
     <script>
         $(function () {
             if (localStorage.getItem('username').length == 0) {
                 window.location.href = '/login'
                 return
             }
+            Aajax('/api/schoolBase', "get", function (res) {
+                if (res.code == 1) {
+                    console.log(res)
+                }
+            }, {})
             var widget = $('.tabs-basic');
             var tabs = widget.find('ul a'),
                 content = widget.find('.tabs-content-placeholder > div');
@@ -496,17 +502,14 @@
                 $(this).addClass('tab-active');
                 content.eq(index).addClass('tab-content-active');
             });
+
             $('#loginout').click(function () {
-                $.ajax({
-                    url: '/api/loginout',
-                    dataType: "json",
-                    type: "POST",
-                }).then(function (res) {
+                Aajax('/api/loginout', "POST", function (res) {
                     if (res.code == 1) {
                         window.location.href = '/login'
                         localStorage.setItem('username', '')
                     }
-                })
+                }, {})
             })
         })
     </script>
