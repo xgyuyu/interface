@@ -3,8 +3,24 @@ const jsonToken = require('jsonwebtoken')
 const { handleSuccess, handleError } = require("../middlewears/handle")
 const SchoolController = {
     // 学校画像基础数据
-    schoolBase: async (ctx) => {
+    schoolBase: async(ctx) => {
         await School.baseData().then(res => {
+            handleSuccess({
+                ctx,
+                result: res,
+                message: '成功'
+            })
+        }).catch(err => {
+            handleError({
+                ctx,
+                message: '失败',
+                err
+            })
+        })
+    },
+    schoolBaseByYear: async(ctx) => {
+        let ctx_query = ctx.query;
+        await School.schoolBaseByYear(ctx_query.year).then(res => {
             handleSuccess({
                 ctx,
                 result: res,

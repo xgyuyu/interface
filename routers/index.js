@@ -7,8 +7,8 @@ const router = new Router({
 
 //API
 router
-    // 路由
-    .get('/', async (ctx, next) => {
+// 路由
+    .get('/', async(ctx, next) => {
         if (ctx.session.user === '') {
             ctx.response.redirect('/login');
             return
@@ -18,7 +18,7 @@ router
             title,
         })
     })
-    .get('/login', async (ctx, next) => {
+    .get('/login', async(ctx, next) => {
         let title = 'hello koa2'
         await ctx.render('login', {
             title,
@@ -29,5 +29,6 @@ router
     .post('/api/loginout', controller.auth.loginout) // 登出
     // get请求
     .get('/api/schoolBase', controller.school.schoolBase) // 学校画像
+    .get('/api/schoolBaseByYear', controller.school.schoolBaseByYear) // 学校画像2019
 
 module.exports = router

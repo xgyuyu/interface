@@ -1,15 +1,18 @@
 const Auth = require('../model/auth.model')
 const md5 = require('md5')
 const jsonToken = require('jsonwebtoken')
-const { handleSuccess, handleError } = require("../middlewears/handle")
+const {
+    handleSuccess,
+    handleError
+} = require("../middlewears/handle")
 const AuthController = {
     // 注册
-    register: async (ctx) => {
+    register: async(ctx) => {
         let {
             username,
             password
         } = ctx.request.body
-        // 先查看用户名是否已经存在
+            // 先查看用户名是否已经存在
         await Auth.findByUsername([username]).then(async res => {
             if (res.length > 0) {
                 handleError({
@@ -50,7 +53,7 @@ const AuthController = {
     },
 
     // 登录
-    login: async (ctx) => {
+    login: async(ctx) => {
         let {
             username,
             password
@@ -91,7 +94,7 @@ const AuthController = {
 
     },
 
-    loginout: async (ctx) => {
+    loginout: async(ctx) => {
         ctx.session.user = '';
         handleSuccess({
             ctx,
@@ -100,7 +103,7 @@ const AuthController = {
     },
 
     // 获取用户信息
-    getAuth: async (ctx) => {
+    getAuth: async(ctx) => {
         let {
             username
         } = ctx.request.body
@@ -121,7 +124,7 @@ const AuthController = {
 
 
     // 更新用户信息
-    updateAuth: async (ctx) => {
+    updateAuth: async(ctx) => {
         let {
             username,
             password,
