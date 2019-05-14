@@ -30,5 +30,6 @@ router
     // get请求
     .get('/api/schoolBase', controller.school.schoolBase) // 学校画像
     .get('/api/schoolBaseByYear', controller.school.schoolBaseByYear) // 学校画像2019
+    .get('/api/schoolBaseAllByYear', controller.school.schoolBaseAllByYear)
 
 module.exports = router
