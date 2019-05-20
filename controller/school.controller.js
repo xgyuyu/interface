@@ -52,6 +52,24 @@ const SchoolController = {
             message: '成功'
         })
     },
+    dnzs: async(ctx) => {
+        const res1 =  await School.dnzs1()
+        // const res2 =  await School.dnzs2()
+        // const res = [res1]
+        handleSuccess({
+            ctx,
+            result: res1,
+            message: '成功'
+        })
+    },
+    jxzbUp: async(ctx) => {
+        const res =  await School.jxzbUp()
+        handleSuccess({
+            ctx,
+            result: res,
+            message: '成功'
+        })
+    }
 }
 
 module.exports = SchoolController
