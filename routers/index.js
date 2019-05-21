@@ -31,7 +31,8 @@ router
     .get('/api/schoolBase', controller.school.schoolBase) // 学校画像
     .get('/api/schoolBaseByYear', controller.school.schoolBaseByYear) // 学校画像2019
     .get('/api/schoolBaseAllByYear', controller.school.schoolBaseAllByYear)
-    .get('/api/dnzs', controller.school.dnzs)
+    // .get('/api/dnzs', controller.school.dnzs)
+    .get('/api/all', controller.school.all)
     .get('/api/jxzbUp', controller.school.jxzbUp)
 
 module.exports = router

@@ -54,6 +54,14 @@ const School = {
         let _sql = `select * from zzxx_dnzhaosheng where id="12"`
         return query(_sql, params)
     },
+    dnzxs1(params) {
+        let _sql = `select * from zzxx_dnzaixiaosheng`
+        return query(_sql, params)
+    },
+    glbkxlzxsxinxi1(params) {
+        let _sql = `select * from zzxx_glbkxlzxsxinxi`
+        return query(_sql, params)
+    },
     jxzbUp(params){
         let _sql = `select * from zzxx_dnzhaosheng where riseFall="1"`
         return query(_sql, params)

@@ -52,13 +52,14 @@ const SchoolController = {
             message: '成功'
         })
     },
-    dnzs: async(ctx) => {
-        const res1 =  await School.dnzs1()
-        // const res2 =  await School.dnzs2()
-        // const res = [res1]
+    all: async(ctx) => {
+        const res1 = await School.dnzs1()
+        const res2 = await School.dnzxs1()
+        const res3 = await School.glbkxlzxsxinxi1()
+        const res = [res1,res2,res3]
         handleSuccess({
             ctx,
-            result: res1,
+            result: res,
             message: '成功'
         })
     },
