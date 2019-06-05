@@ -34,5 +34,14 @@ router
     // .get('/api/dnzs', controller.school.dnzs)
     .get('/api/all', controller.school.all)
     .get('/api/jxzbUp', controller.school.jxzbUp)
+    .get('/api/jxzbDown', controller.school.jxzbDown)
+    .get('/api/lszg', controller.school.jxzbDown)
+    .get('/api/lszd', controller.school.jxzbDown)
+    .get('/api/ndzkUp', controller.school.jxzbDown)
+    .get('/api/ndzkDown', controller.school.jxzbDown)
+    .get('/api/ndbhgBb', controller.school.jxzbDown)
+    .get('/api/ndbhgXb', controller.school.jxzbDown)
+    .get('/api/ndbhGs', controller.school.jxzbDown)
+    .get('/api/ndbhEh', controller.school.jxzbDown)
 
 module.exports = router
