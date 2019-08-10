@@ -1,10 +1,7 @@
 const Auth = require('../model/auth.model')
 const md5 = require('md5')
 const jsonToken = require('jsonwebtoken')
-const {
-    handleSuccess,
-    handleError
-} = require("../middlewears/handle")
+const { handleSuccess, handleError } = require("../middlewears/handle")
 const AuthController = {
     // 注册
     register: async(ctx) => {

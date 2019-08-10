@@ -1,5 +1,4 @@
 const School = require('../model/school.model')
-const jsonToken = require('jsonwebtoken')
 const { handleSuccess, handleError } = require("../middlewears/handle")
 const SchoolController = {
     // 学校画像基础数据

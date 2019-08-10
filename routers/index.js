@@ -7,8 +7,8 @@ const router = new Router({
 
 //API
 router
-// 路由
-    .get('/', async(ctx, next) => {
+    // 路由
+    /* .get('/', async(ctx, next) => {
         if (ctx.session.user === '') {
             ctx.response.redirect('/login');
             return
@@ -17,7 +17,7 @@ router
         await ctx.render('index', {
             title,
         })
-    })
+    }) */
     .get('/login', async(ctx, next) => {
         let title = 'hello koa2'
         await ctx.render('login', {
@@ -43,5 +43,14 @@ router
     .get('/api/ndbhgXb', controller.school.jxzbDown)
     .get('/api/ndbhGs', controller.school.jxzbDown)
     .get('/api/ndbhEh', controller.school.jxzbDown)
+    // 老师
+    .get('/api/teacher/zonghechengz', controller.teacher.zonghechengznl)
+    .get('/api/teacher/jiaoxuejibenxx', controller.teacher.jiaoxuejibenxx)
+    .get('/api/teacher/jiaoxuepingjia', controller.teacher.jiaoxuepingjia)
+    .get('/api/teacher/jiaoxuechuangxin', controller.teacher.jiaoxuechuangxin)
+    .get('/api/teacher/teacherInfo', controller.teacher.teacherInfo)
+    .get('/api/teacher/searchTeacher', controller.teacher.searchTeacher)
+
+    // searchTeacher
 
 module.exports = router
